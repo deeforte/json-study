@@ -50,7 +50,24 @@ A kitchen has many items.
     rack, and cinnamon, nutmeg, and vanilla on another shelf.
 
 ```json
-<!-- your answer here -->
+"kitchen": {
+  "cupboard": {
+    "bowls": 8,
+    "plates": 8
+  }
+  "electricStove": {
+    "heatingElements": [
+      {"value": "small"},
+      {"value": "medium"},
+      {"value": "large"},
+      {"value": "XLarge"}
+    ]
+  }
+  "herbsSpices": {
+    "rack1": ["chives", "lemon grass", "mint"],
+    "rack2": ["cinnamon", "nutmeg", "vanilla"]
+  }
+}
 ```
 
 ## Modeling Data Using JSON: Part II
@@ -62,7 +79,30 @@ delicious apple.
 Copy the JSON that you wrote for the previous question and include the new information about the kitchen.
 
 ```json
-<!-- your answer here -->
+"kitchen": {
+  "cupboard": {
+    "bowls": 8,
+    "plates": 8
+  }
+  "electricStove": {
+    "heatingElements": [
+      {"value": "small"},
+      {"value": "medium"},
+      {"value": "large"},
+      {"value": "XLarge"}
+    ]
+  }
+  "herbsSpices": {
+    "rack1": ["chives", "lemon grass", "mint"],
+    "rack2": ["cinnamon", "nutmeg", "vanilla"]
+  }
+  "fruitBasket": {
+    "apples": {
+      "fuji": 2,
+      "gala": 7,
+      "golden": 1
+  }}
+}
 ```
 
 ## JSON Methods
@@ -70,7 +110,7 @@ Copy the JSON that you wrote for the previous question and include the new infor
 Can you write a method in the JSON that you wrote above?
 
 ```json
-<!-- your answer here -->
+const kitchen = json.parse("kitchen")
 ```
 
 ## JSON Comments
@@ -78,5 +118,5 @@ Can you write a method in the JSON that you wrote above?
 Can you write comments in the JSON that you wrote above?
 
 ```json
-<!-- your answer here -->
-```
+json cannot have comments.  a way around this is to have an element th
+```at is named "_comment": "comment text goes here..."

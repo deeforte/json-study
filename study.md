@@ -50,7 +50,7 @@ A kitchen has many items.
     rack, and cinnamon, nutmeg, and vanilla on another shelf.
 
 ```json
-"kitchen": {
+'{"kitchen": {
   "cupboard": {
     "bowls": 8,
     "plates": 8
@@ -67,7 +67,7 @@ A kitchen has many items.
     "rack1": ["chives", "lemon grass", "mint"],
     "rack2": ["cinnamon", "nutmeg", "vanilla"]
   }
-}
+}}'
 ```
 
 ## Modeling Data Using JSON: Part II
